@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 03 — Strategy Field Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="site-nav">
+    <a class="brand" href="../index.html">Strategy Field Notes</a>
+    <a class="back" href="../index.html">← All weeks</a>
+  </nav>
+
+  <header class="masthead">
+    <div class="eyebrow">Week 03</div>
+    <h1>Internal Analysis: Resources, Capabilities, VRIO</h1>
+    <p class="dek">Two firms face the same five forces in the same industry and earn different returns. What do you have, or know how to do, that the firm next door can't copy?</p>
+  </header>
+
+  <section class="post-section">
+    <h3>The one idea</h3>
+    <p>Most higher ed marketing teams can list what makes their program special: small class sizes, a signature lab, a beloved faculty member. VRIO is the test almost nobody runs on that list. Valuable, rare, costly to imitate, and is the organization actually set up to exploit it. Run it honestly and most programs find that half of what they lead with is table stakes, not an advantage. The idea worth keeping from this week's whole reading pile: an advantage isn't what you're proud of. It's what survives four questions, asked in order.</p>
+  </section>
+
+  <section class="post-section">
+    <h3>What would be wrong to leave out</h3>
+    <p>Whether a data pile is actually a moat. It's tempting to treat "we have years of enrollment and engagement data" as an automatic advantage, especially with every AI conversation treating data as the new oil. Run it through VRIO instead of assuming it. Valuable, usually yes. Rare, only if competitors don't have comparable data, and most peer institutions have been collecting the same funnel metrics for just as long. Hard to imitate, this is where it gets interesting: data compounds, so a genuine head start is hard to close quickly. Organized to exploit, this is where most programs actually fail, sitting on years of data nobody is using to change a single recruitment decision. A pile of unused data isn't a moat. It's an unused advantage, and that's a workflow problem, not a bragging right.</p>
+  </section>
+
+  <section class="section-heading">
+    <span class="eyebrow">Run it yourself</span>
+    <h2>The VRIO practical test</h2>
+    <p class="sub">Four questions, in order. Trace the tree, test one of your own program's talking points, then print the scorecard for the rest of your list.</p>
+  </section>
+
+  <div class="tool-panel tree-panel">
+    <h4>How the test runs</h4>
+    <svg id="vrio-tree" class="decision-tree" viewBox="0 0 700 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VRIO decision tree">
+      <line class="branch-line" x1="150" y1="70" x2="150" y2="560"></line>
+
+      <rect id="rect-q1" class="node-rect" x="40" y="30" width="220" height="64" rx="8"></rect>
+      <text class="node-label" x="60" y="58">Is it valuable?</text>
+      <text class="node-sub" x="60" y="78">Does it help meet demand or beat a threat</text>
+      <line class="branch-line" x1="260" y1="62" x2="380" y2="62"></line>
+      <text class="branch-tag" x="270" y="52">no</text>
+      <rect id="out-rect-disadvantage" class="outcome-rect o1" x="380" y="30" width="280" height="64" rx="8"></rect>
+      <text id="out-label-disadvantage" class="outcome-label" x="400" y="58">Competitive disadvantage</text>
+      <text class="node-sub" x="400" y="78">cut it from your messaging</text>
+
+      <rect id="rect-q2" class="node-rect" x="40" y="150" width="220" height="64" rx="8"></rect>
+      <text class="node-label" x="60" y="178">Is it rare?</text>
+      <text class="node-sub" x="60" y="198">Do most competitors lack it too</text>
+      <line class="branch-line" x1="260" y1="182" x2="380" y2="182"></line>
+      <text class="branch-tag" x="270" y="172">no</text>
+      <rect id="out-rect-parity" class="outcome-rect o2" x="380" y="150" width="280" height="64" rx="8"></rect>
+      <text id="out-label-parity" class="outcome-label" x="400" y="178">Competitive parity</text>
+      <text class="node-sub" x="400" y="198">table stakes, not a differentiator</text>
+
+      <rect id="rect-q3" class="node-rect" x="40" y="270" width="220" height="64" rx="8"></rect>
+      <text class="node-label" x="60" y="298">Is it costly to imitate?</text>
+      <text class="node-sub" x="60" y="318">Slow-built, not easily bought or copied</text>
+      <line class="branch-line" x1="260" y1="302" x2="380" y2="302"></line>
+      <text class="branch-tag" x="270" y="292">no</text>
+      <rect id="out-rect-temporary" class="outcome-rect o3" x="380" y="270" width="280" height="64" rx="8"></rect>
+      <text id="out-label-temporary" class="outcome-label" x="400" y="298">Temporary advantage</text>
+      <text class="node-sub" x="400" y="318">real, but on borrowed time</text>
+
+      <rect id="rect-q4" class="node-rect" x="40" y="390" width="220" height="64" rx="8"></rect>
+      <text class="node-label" x="60" y="418">Are you organized to exploit it?</text>
+      <text class="node-sub" x="60" y="438">Does your team actually use it</text>
+      <line class="branch-line" x1="260" y1="422" x2="380" y2="422"></line>
+      <text class="branch-tag" x="270" y="412">no</text>
+      <rect id="out-rect-unused" class="outcome-rect o4" x="380" y="390" width="280" height="64" rx="8"></rect>
+      <text id="out-label-unused" class="outcome-label" x="400" y="418">Unused advantage</text>
+      <text class="node-sub" x="400" y="438">value created, not captured</text>
+
+      <text class="branch-tag" x="160" y="235">yes</text>
+      <text class="branch-tag" x="160" y="355">yes</text>
+      <text class="branch-tag" x="160" y="475">yes</text>
+      <line class="branch-line" x1="150" y1="560" x2="150" y2="580"></line>
+      <rect id="out-rect-sustained" class="outcome-rect o5" x="40" y="530" width="260" height="70" rx="8"></rect>
+      <text id="out-label-sustained" class="outcome-label" x="60" y="562">Sustained competitive</text>
+      <text id="out-label-sustained2" class="outcome-label" x="60" y="582">advantage</text>
+    </svg>
+  </div>
+
+  <div class="tool-panel quiz-panel no-print">
+    <h4>Try it on your own program</h4>
+    <label class="field-label" for="resource-name">The resource or claim you're testing</label>
+    <input type="text" id="resource-name" placeholder="e.g. our clinical placement partnerships" autocomplete="off">
+
+    <div class="q-row" id="row-v">
+      <div class="q-text"><span class="q-main">Is it valuable?</span><span class="q-help">Can you point to it actually moving an outcome a prospective student cares about?</span></div>
+      <div class="btn-pair"><button data-q="v" data-a="yes">Yes</button><button data-q="v" data-a="no">No</button></div>
+    </div>
+    <div class="q-row disabled" id="row-r">
+      <div class="q-text"><span class="q-main">Is it rare?</span><span class="q-help">Check two or three competitor programs. Do they say the same thing?</span></div>
+      <div class="btn-pair"><button data-q="r" data-a="yes">Yes</button><button data-q="r" data-a="no">No</button></div>
+    </div>
+    <div class="q-row disabled" id="row-i">
+      <div class="q-text"><span class="q-main">Is it costly to imitate?</span><span class="q-help">Was it built slowly over years, or could a competitor stand it up this semester?</span></div>
+      <div class="btn-pair"><button data-q="i" data-a="yes">Yes</button><button data-q="i" data-a="no">No</button></div>
+    </div>
+    <div class="q-row disabled" id="row-o">
+      <div class="q-text"><span class="q-main">Are you organized to exploit it?</span><span class="q-help">Does it actually show up in recruitment content and admissions follow-up?</span></div>
+      <div class="btn-pair"><button data-q="o" data-a="yes">Yes</button><button data-q="o" data-a="no">No</button></div>
+    </div>
+
+    <div class="result-panel" id="result-panel" style="display:none;">
+      <div class="result-label" id="result-label">Result</div>
+      <div class="result-outcome" id="result-outcome"></div>
+      <div class="result-note" id="result-note"></div>
+    </div>
+    <button class="reset-link" id="reset-btn">start over</button>
+  </div>
+
+  <div class="tool-panel scorecard-panel" id="scorecard">
+    <div class="print-row">
+      <h4 style="margin-bottom:0;">Printable scorecard</h4>
+      <button id="print-btn" class="tool-print-btn no-print">Print scorecard</button>
+    </div>
+    <p class="sub" style="margin-bottom:16px;">Run the test on your own list of talking points before someone else runs it on them for you. One row per resource.</p>
+
+    <div class="key-row no-print">
+      <div class="key-item"><span class="key-swatch" style="background:var(--out1);"></span>Disadvantage</div>
+      <div class="key-item"><span class="key-swatch" style="background:var(--out2);"></span>Parity</div>
+      <div class="key-item"><span class="key-swatch" style="background:var(--out3);"></span>Temporary</div>
+      <div class="key-item"><span class="key-swatch" style="background:var(--out4);"></span>Unused advantage</div>
+      <div class="key-item"><span class="key-swatch" style="background:var(--out5);"></span>Sustained advantage</div>
+    </div>
+
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th style="width:24%;">Resource or claim</th>
+          <th style="width:14%;">Valuable?</th>
+          <th style="width:14%;">Rare?</th>
+          <th style="width:16%;">Costly to imitate?</th>
+          <th style="width:16%;">Organized to exploit?</th>
+          <th style="width:16%;">Outcome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="example">
+          <td class="ex-label">Example: clinical placement partnerships</td>
+          <td>yes</td><td>yes</td><td>yes</td><td>no</td>
+          <td>Unused advantage</td>
+        </tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="post-section">
+    <h3>Sources referenced this week</h3>
+    <ul class="sources-list">
+      <li><span class="cite-author">Barney</span> — "Firm Resources and Sustained Competitive Advantage" (1991)</li>
+      <li><span class="cite-author">Barney</span> — "Looking Inside for Competitive Advantage" (1995)</li>
+      <li><span class="cite-author">Wernerfelt</span> — "A Resource-Based View of the Firm" (1984)</li>
+      <li><span class="cite-author">Peteraf</span> — "The Cornerstones of Competitive Advantage" (1993)</li>
+      <li><span class="cite-author">Dierickx &amp; Cool</span> — "Asset Stock Accumulation and Sustainability of Competitive Advantage" (1989)</li>
+      <li><span class="cite-author">Prahalad &amp; Hamel</span> — "The Core Competence of the Corporation" (1990)</li>
+      <li><span class="cite-author">Teece, Pisano &amp; Shuen</span> — "Dynamic Capabilities and Strategic Management" (1997)</li>
+      <li><span class="cite-author">Hagiu &amp; Wright</span> — "When Data Creates Competitive Advantage" (2020)</li>
+      <li><span class="cite-author">Brynjolfsson &amp; McElheran</span> — "The Rapid Adoption of Data-Driven Decision-Making" (2016)</li>
+      <li>Plus additional readings this week on the knowledge-based view, critiques of the resource-based view, and the anthropology of value.</li>
+    </ul>
+  </section>
+
+  <section class="post-section cards-heading">
+    <span class="eyebrow">This week's field notes</span>
+    <h3>Five things any higher ed marketer could do Monday</h3>
+  </section>
+
+  <div class="card">
+    <div class="card-top"><span class="card-num">01 / 05</span><span class="card-source">Field note</span></div>
+    <p class="tip">Run VRIO on your top three talking points before you defend them to a dean.</p>
+    <div class="row"><span class="tag why">Why</span><p>The test separates what's actually defensible from what just feels distinctive. <span class="source-name">— Barney</span></p></div>
+    <div class="row action"><span class="tag do">Do Monday</span><p>Pick your program's three most-repeated selling points and score each one: valuable, rare, hard to imitate, organized to exploit. Anything that fails at question one or two gets demoted from headline to footnote.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><span class="card-num">02 / 05</span><span class="card-source">Field note</span></div>
+    <p class="tip">Stop calling a shared resource a differentiator.</p>
+    <div class="row"><span class="tag why">Why</span><p>A resource only counts as rare if your closest competitors genuinely lack it too. <span class="source-name">— Barney, 1995</span></p></div>
+    <div class="row action"><span class="tag do">Do Monday</span><p>Check two or three competitor program pages against your top claim. If they say the same thing, move it out of your unique value prop and treat it as table stakes.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><span class="card-num">03 / 05</span><span class="card-source">Field note</span></div>
+    <p class="tip">Weight slow-built assets over fast, visible ones.</p>
+    <div class="row"><span class="tag why">Why</span><p>Advantages built up over years are harder to copy than a new campaign or redesign. <span class="source-name">— Dierickx &amp; Cool</span></p></div>
+    <div class="row action"><span class="tag do">Do Monday</span><p>When prioritizing marketing investment, favor longitudinal assets, alumni outcomes, faculty reputation, employer relationships, over one-off visual refreshes, even when the refresh is more fun to work on.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><span class="card-num">04 / 05</span><span class="card-source">Field note</span></div>
+    <p class="tip">Find the unused advantage hiding inside your own team.</p>
+    <div class="row"><span class="tag why">Why</span><p>A resource can be genuinely rare and hard to copy and still produce nothing, if nobody is organized to use it. <span class="source-name">— Barney, 1995</span></p></div>
+    <div class="row action"><span class="tag do">Do Monday</span><p>Pick your program's strongest VRIO-passing resource and trace it forward: does it show up in recruitment content? In admissions follow-up? Any missing step is a fixable gap, not a messaging problem.</p></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><span class="card-num">05 / 05</span><span class="card-source">Field note</span></div>
+    <p class="tip">Run the data question honestly, not as a slogan.</p>
+    <div class="row"><span class="tag why">Why</span><p>Data only becomes a moat if it compounds faster than competitors can catch up, and if someone is actually using it. <span class="source-name">— Hagiu &amp; Wright</span></p></div>
+    <div class="row action"><span class="tag do">Do Monday</span><p>Name one decision your team made this month using historical enrollment or engagement data. If you can't name one, your "data advantage" is currently a pile, not a moat.</p></div>
+  </div>
+
+  <footer class="site-footer">
+    <p><a href="../index.html">← Back to all weeks</a></p>
+  </footer>
+
+</div>
+
+<script>
+  const state = { v:null, r:null, i:null, o:null };
+  const order = ['v','r','i','o'];
+  const rowEls = { v:document.getElementById('row-v'), r:document.getElementById('row-r'), i:document.getElementById('row-i'), o:document.getElementById('row-o') };
+  const nodeRects = { v:document.getElementById('rect-q1'), r:document.getElementById('rect-q2'), i:document.getElementById('rect-q3'), o:document.getElementById('rect-q4') };
+
+  const outcomes = {
+    disadvantage: { rect:document.getElementById('out-rect-disadvantage'), label:document.getElementById('out-label-disadvantage'), state:'s1', activeClass:'a1', title:'Competitive disadvantage', note:'If it is not even valuable, it should not be in your messaging at all. Cut it and spend the space on something that is.' },
+    parity: { rect:document.getElementById('out-rect-parity'), label:document.getElementById('out-label-parity'), state:'s2', activeClass:'a2', title:'Competitive parity', note:'Valuable, but not rare. This is table stakes. Fine to mention, but it will never be the reason someone chooses you over a similar program.' },
+    temporary: { rect:document.getElementById('out-rect-temporary'), label:document.getElementById('out-label-temporary'), state:'s3', activeClass:'a3', title:'Temporary advantage', note:'Real for now. Worth using, but do not build a long-term brand promise on something a competitor could stand up in a semester.' },
+    unused: { rect:document.getElementById('out-rect-unused'), label:document.getElementById('out-label-unused'), state:'s4', activeClass:'a4', title:'Unused advantage', note:'The advantage is real. Your team just is not capturing it. This is a workflow gap, not a messaging problem, and it is usually the fastest one to fix.' },
+    sustained: { rect:document.getElementById('out-rect-sustained'), label:document.getElementById('out-label-sustained'), state:'s5', activeClass:'a5', title:'Sustained competitive advantage', note:'This one earns its place as a core message. Lead with it.' }
+  };
+
+  function clearHighlights(){
+    Object.values(nodeRects).forEach(r => r.classList.remove('current','passed'));
+    Object.values(outcomes).forEach(o => {
+      o.rect.classList.remove('active');
+      o.label.classList.remove('a1','a2','a3','a4','a5');
+    });
+    document.getElementById('out-label-sustained2').classList.remove('a5');
+  }
+
+  function activateOutcome(key){
+    const o = outcomes[key];
+    o.rect.classList.add('active');
+    o.label.classList.add(o.activeClass);
+    if(key === 'sustained'){ document.getElementById('out-label-sustained2').classList.add('a5'); }
+  }
+
+  function render(){
+    clearHighlights();
+    let stopped = false;
+    for(const q of order){
+      if(stopped){ rowEls[q].classList.add('disabled'); continue; }
+      rowEls[q].classList.remove('disabled');
+      nodeRects[q].classList.add('current');
+      const answer = state[q];
+      const btns = rowEls[q].querySelectorAll('button');
+      btns.forEach(b => {
+        b.classList.remove('selected-yes','selected-no');
+        if(answer === b.dataset.a){ b.classList.add(answer === 'yes' ? 'selected-yes' : 'selected-no'); }
+      });
+      if(answer === null){ stopped = true; continue; }
+      nodeRects[q].classList.remove('current');
+      nodeRects[q].classList.add('passed');
+      if(answer === 'no'){
+        const outcomeKey = q === 'v' ? 'disadvantage' : q === 'r' ? 'parity' : q === 'i' ? 'temporary' : 'unused';
+        activateOutcome(outcomeKey);
+        showResult(outcomeKey);
+        stopped = true;
+      }
+    }
+    if(!stopped && order.every(q => state[q] === 'yes')){
+      activateOutcome('sustained');
+      showResult('sustained');
+    } else if(order.some(q => state[q] === null)){
+      document.getElementById('result-panel').style.display = 'none';
+    }
+  }
+
+  function showResult(key){
+    const panel = document.getElementById('result-panel');
+    const name = document.getElementById('resource-name').value.trim();
+    panel.style.display = 'block';
+    panel.className = 'result-panel ' + outcomes[key].state;
+    document.getElementById('result-label').textContent = name ? ('Result for "' + name + '"') : 'Result';
+    document.getElementById('result-outcome').textContent = outcomes[key].title;
+    document.getElementById('result-note').textContent = outcomes[key].note;
+  }
+
+  document.querySelectorAll('.btn-pair button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const q = btn.dataset.q;
+      const a = btn.dataset.a;
+      state[q] = a;
+      const idx = order.indexOf(q);
+      order.slice(idx+1).forEach(k => state[k] = null);
+      render();
+    });
+  });
+
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    order.forEach(k => state[k] = null);
+    document.getElementById('resource-name').value = '';
+    document.getElementById('result-panel').style.display = 'none';
+    render();
+  });
+
+  document.getElementById('print-btn').addEventListener('click', () => window.print());
+
+  render();
+</script>
+
+</body>
+</html>
