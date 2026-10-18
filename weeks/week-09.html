@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 09 — Strategy Field Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .diagram-panel { margin: 20px 0 32px; }
+  .diagram-panel svg { width: 100%; height: auto; display: block; }
+  .diagram-caption { font-size: 0.9rem; color: var(--ink-soft); margin-top: 10px; }
+  .podcast-panel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--sage-bg);
+    border: 1px solid var(--tan-line);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .podcast-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .podcast-text h4 { margin: 0 0 4px; font-family: 'Fraunces', serif; color: var(--sage-deep); }
+  .podcast-text p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+  .podcast-text a { color: var(--sage-deep); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="site-nav">
+    <a class="brand" href="../index.html">Strategy Field Notes</a>
+    <a class="back" href="../index.html">← All weeks</a>
+  </nav>
+
+  <header class="masthead">
+    <div class="eyebrow">Week 09</div>
+    <h1>Who Could Decide to Become You</h1>
+    <p class="dek">Pipes, platforms, and ecosystems, and what it means for a recruitment program that depends on Google, directory sites, and a data vendor for distribution it doesn't own.</p>
+  </header>
+
+  <div class="podcast-panel">
+    <div class="podcast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" stroke="#FCFAF5" stroke-width="1.8"/>
+        <path d="M19 11a7 7 0 0 1-14 0M12 18v3" stroke="#FCFAF5" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="podcast-text">
+      <h4>Listen to this week's chapter</h4>
+      <p>An AI-generated audio overview walking through the ideas below. <a href="https://notebooklm.link.google/8xh7sr2fXJ7l" target="_blank" rel="noopener">Listen on NotebookLM →</a></p>
+    </div>
+  </div>
+
+  <section class="post-section">
+    <h3>How platforms actually work</h3>
+    <p>Most businesses are what's called a pipe: value moves in one direction, a supplier to a firm to a customer, each step adding something along the way. A platform is different. It doesn't make the product, it mediates an exchange between two or more sides it doesn't fully control, and it wins by orchestrating resources it doesn't own rather than owning them itself.</p>
+    <p>That creates a specific kind of market, a two-sided one, where two distinct groups each need the other to show up, and neither shows up first on its own. The platform has to decide who pays and who gets subsidized to get both sides in the room at once, a design choice, not something that just happens. Once both sides are there, network effects can kick in: the product gets more valuable as more people use it, and small early leads can compound into one side winning the whole market.</p>
+    <p>Zoom out further and a platform sits inside something bigger: an ecosystem of everyone who built something around it, apps, sellers, partners, developers. How the platform treats that ecosystem matters. A keystone shares enough value that the things built on it keep investing and growing. A dominator extracts value until the things around it stop investing, which eventually hurts the platform too. And because a platform can change its own rules unilaterally, governance, how open or closed it is, becomes a live, ongoing design question, not something it decides once.</p>
+    <p>The sharpest version of all of this: a platform can watch what works on top of it and then do that thing itself, bundling its own version into the base it already owns. Distribution beats a better product in that fight, because the platform already has everyone's attention. The uncomfortable question for anyone building on someone else's platform is simply whether that's ever going to happen to them, and what to do before it does.</p>
+  </section>
+
+  <section class="section-heading">
+    <span class="eyebrow">The ideas this chapter runs on</span>
+    <h2>Applied to the RN-BS program</h2>
+  </section>
+
+  <section class="post-section">
+    <h3>Pipes versus platforms</h3>
+    <p>The RN-BS program is a pipe trying to get noticed inside several platforms it doesn't own: Google's search results, nursing-program directory sites, and the contact-list vendor from two weeks ago. None of those are the program's infrastructure, they're borrowed distribution.</p>
+  </section>
+
+  <div class="tool-panel diagram-panel">
+    <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <text x="20" y="28" font-size="14" font-weight="600" fill="#3D4E37">A pipe</text>
+      <rect x="20" y="45" width="90" height="40" rx="8" fill="#E1E8DA" stroke="#5F7A57"/>
+      <text x="65" y="69" font-size="11" fill="#32392E" text-anchor="middle">Supplier</text>
+      <line x1="110" y1="65" x2="150" y2="65" stroke="#6E7565" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="150" y="45" width="90" height="40" rx="8" fill="#E1E8DA" stroke="#5F7A57"/>
+      <text x="195" y="69" font-size="11" fill="#32392E" text-anchor="middle">Firm</text>
+      <line x1="240" y1="65" x2="280" y2="65" stroke="#6E7565" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="280" y="45" width="90" height="40" rx="8" fill="#E1E8DA" stroke="#5F7A57"/>
+      <text x="325" y="69" font-size="11" fill="#32392E" text-anchor="middle">Customer</text>
+
+      <text x="420" y="28" font-size="14" font-weight="600" fill="#3D4E37">A platform</text>
+      <circle cx="520" cy="130" r="38" fill="#5F7A57"/>
+      <text x="520" y="126" font-size="10" fill="#FCFAF5" text-anchor="middle">RN-BS</text>
+      <text x="520" y="138" font-size="10" fill="#FCFAF5" text-anchor="middle">program</text>
+
+      <circle cx="430" cy="60" r="30" fill="#F1E4C9" stroke="#A9814F"/>
+      <text x="430" y="64" font-size="10" fill="#32392E" text-anchor="middle">Google</text>
+      <line x1="500" y1="105" x2="450" y2="78" stroke="#6E7565" stroke-width="1.5"/>
+
+      <circle cx="430" cy="200" r="30" fill="#F1E4C9" stroke="#A9814F"/>
+      <text x="430" y="196" font-size="9.5" fill="#32392E" text-anchor="middle">Directory</text>
+      <text x="430" y="208" font-size="9.5" fill="#32392E" text-anchor="middle">site</text>
+      <line x1="500" y1="155" x2="450" y2="182" stroke="#6E7565" stroke-width="1.5"/>
+
+      <circle cx="600" cy="130" r="30" fill="#F1E4C9" stroke="#A9814F"/>
+      <text x="600" y="126" font-size="9" fill="#32392E" text-anchor="middle">Data</text>
+      <text x="600" y="137" font-size="9" fill="#32392E" text-anchor="middle">vendor</text>
+      <line x1="558" y1="130" x2="570" y2="130" stroke="#6E7565" stroke-width="1.5"/>
+
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#6E7565"/>
+        </marker>
+      </defs>
+    </svg>
+    <p class="diagram-caption">A pipe moves value in a line. A platform sits in the middle, mediating sides it doesn't control, the program is one spoke among several.</p>
+  </div>
+
+  <section class="post-section">
+    <h3>Two-sided markets, and who gets subsidized</h3>
+    <p>Google Ads is a two-sided market: advertisers like the School of Nursing pay, searchers get a free result. Who pays and who's subsidized is Google's design choice, and nursing directory sites often work the same way, free browsing for students, paid placement for programs.</p>
+  </section>
+
+  <div class="tool-panel diagram-panel">
+    <svg viewBox="0 0 640 180" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <rect x="40" y="60" width="160" height="60" rx="10" fill="#F1E1D6" stroke="#8B5A44"/>
+      <text x="120" y="88" font-size="12" font-weight="600" fill="#32392E" text-anchor="middle">Advertisers</text>
+      <text x="120" y="104" font-size="11" fill="#6E7565" text-anchor="middle">pay per click</text>
+
+      <rect x="240" y="40" width="160" height="100" rx="12" fill="#5F7A57"/>
+      <text x="320" y="85" font-size="13" font-weight="600" fill="#FCFAF5" text-anchor="middle">Google</text>
+      <text x="320" y="103" font-size="10" fill="#E1E8DA" text-anchor="middle">sets the price,</text>
+      <text x="320" y="116" font-size="10" fill="#E1E8DA" text-anchor="middle">sets the rules</text>
+
+      <rect x="440" y="60" width="160" height="60" rx="10" fill="#E1E8DA" stroke="#5F7A57"/>
+      <text x="520" y="88" font-size="12" font-weight="600" fill="#32392E" text-anchor="middle">Searchers</text>
+      <text x="520" y="104" font-size="11" fill="#6E7565" text-anchor="middle">free to use</text>
+
+      <line x1="200" y1="90" x2="240" y2="90" stroke="#8B5A44" stroke-width="2" marker-end="url(#arrow2)"/>
+      <line x1="400" y1="90" x2="440" y2="90" stroke="#5F7A57" stroke-width="2" marker-end="url(#arrow2)"/>
+      <text x="220" y="80" font-size="9" fill="#8B5A44" text-anchor="middle">$</text>
+      <text x="420" y="80" font-size="9" fill="#5F7A57" text-anchor="middle">free</text>
+
+      <defs>
+        <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#6E7565"/>
+        </marker>
+      </defs>
+    </svg>
+    <p class="diagram-caption">Two sides, one priced, one subsidized. Which side pays is the platform's decision, not a market accident.</p>
+  </div>
+
+  <section class="post-section">
+    <h3>Keystone versus dominator</h3>
+    <p>A keystone shares enough value that what's built on it keeps investing. A dominator extracts until it stops. This cuts two ways worth naming: whether Boise State's central marketing structure acts as a keystone or a dominator toward the School of Nursing, and whether Boise State acts as a keystone or a dominator toward its community college partners.</p>
+  </section>
+
+  <div class="tool-panel diagram-panel">
+    <svg viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <defs>
+        <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#5F7A57"/>
+          <stop offset="100%" stop-color="#8B5A44"/>
+        </linearGradient>
+      </defs>
+      <rect x="40" y="55" width="560" height="14" rx="7" fill="url(#spectrum)"/>
+      <text x="40" y="45" font-size="12" font-weight="600" fill="#3D4E37">Keystone</text>
+      <text x="600" y="45" font-size="12" font-weight="600" fill="#8B5A44" text-anchor="end">Dominator</text>
+      <text x="40" y="92" font-size="10" fill="#6E7565">shares value, complementors keep investing</text>
+      <text x="600" y="92" font-size="10" fill="#6E7565" text-anchor="end">extracts value until they stop</text>
+
+      <circle cx="230" cy="62" r="8" fill="#FCFAF5" stroke="#3D4E37" stroke-width="2"/>
+      <text x="230" y="115" font-size="10" fill="#32392E" text-anchor="middle">Boise State →</text>
+      <text x="230" y="128" font-size="10" fill="#32392E" text-anchor="middle">School of Nursing</text>
+
+      <circle cx="310" cy="62" r="8" fill="#FCFAF5" stroke="#3D4E37" stroke-width="2"/>
+      <text x="400" y="115" font-size="10" fill="#32392E" text-anchor="middle">Boise State →</text>
+      <text x="400" y="128" font-size="10" fill="#32392E" text-anchor="middle">CC partners</text>
+      <line x1="310" y1="70" x2="400" y2="70" stroke="transparent"/>
+      <circle cx="400" cy="62" r="0" fill="transparent"/>
+    </svg>
+    <p class="diagram-caption">Where a relationship currently sits on the spectrum, and which direction it could move.</p>
+  </div>
+
+  <section class="post-section">
+    <h3>Envelopment, the actual risk</h3>
+    <p>A platform eats an adjacent market by bundling its own version into the base it already owns, distribution beating a better product. A directory site that starts answering "which program is right for me" directly on its own page, instead of sending the click through, is doing the same thing to individual program pages that a bigger platform does to a smaller business built on top of it.</p>
+  </section>
+
+  <div class="tool-panel diagram-panel">
+    <svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <circle cx="300" cy="100" r="85" fill="#F1E4C9" fill-opacity="0.85" stroke="#A9814F"/>
+      <circle cx="400" cy="100" r="55" fill="#5F7A57" fill-opacity="0.75" stroke="#3D4E37"/>
+      <text x="250" y="60" font-size="12" font-weight="600" fill="#32392E">Directory site</text>
+      <text x="400" y="96" font-size="11" font-weight="600" fill="#FCFAF5" text-anchor="middle">Program</text>
+      <text x="400" y="110" font-size="11" font-weight="600" fill="#FCFAF5" text-anchor="middle">page</text>
+      <text x="340" y="150" font-size="9.5" fill="#6E7565" text-anchor="middle">overlap = what gets</text>
+      <text x="340" y="162" font-size="9.5" fill="#6E7565" text-anchor="middle">absorbed first</text>
+    </svg>
+    <p class="diagram-caption">The bigger circle slowly answers the question the smaller one used to be needed for.</p>
+  </div>
+
+  <section class="post-section">
+    <h3>Governance, and the real defense</h3>
+    <p>There's no clean fix to the fact that a platform can change its own rules. The defensible moves are: keep the direct relationship with the actual person, don't depend on one single platform for everything, move faster than the platform's own roadmap, and when possible pick platforms that need your business as much as you need their reach.</p>
+  </section>
+
+  <div class="tool-panel diagram-panel">
+    <svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <rect x="10" y="20" width="145" height="110" rx="10" fill="#E4EBDF" stroke="#7E9271"/>
+      <text x="82" y="48" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">Keep the</text>
+      <text x="82" y="62" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">direct relationship</text>
+      <circle cx="82" cy="95" r="14" fill="#5F7A57"/>
+      <text x="82" y="100" font-size="13" fill="#FCFAF5" text-anchor="middle">✓</text>
+      <text x="82" y="120" font-size="9" fill="#47593F" text-anchor="middle">already doing it</text>
+
+      <rect x="167" y="20" width="145" height="110" rx="10" fill="#E4EBDF" stroke="#7E9271"/>
+      <text x="239" y="55" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">Multi-home,</text>
+      <text x="239" y="69" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">don't depend on one</text>
+      <circle cx="239" cy="95" r="14" fill="#5F7A57"/>
+      <text x="239" y="100" font-size="13" fill="#FCFAF5" text-anchor="middle">✓</text>
+      <text x="239" y="120" font-size="9" fill="#47593F" text-anchor="middle">partly in place</text>
+
+      <rect x="324" y="20" width="145" height="110" rx="10" fill="#F1E1D6" stroke="#8B5A44"/>
+      <text x="396" y="55" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">Outrun the</text>
+      <text x="396" y="69" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">platform's roadmap</text>
+      <circle cx="396" cy="95" r="14" fill="#A9814F"/>
+      <text x="396" y="100" font-size="13" fill="#FCFAF5" text-anchor="middle">?</text>
+      <text x="396" y="120" font-size="9" fill="#8B5A44" text-anchor="middle">not yet tracked</text>
+
+      <rect x="481" y="20" width="145" height="110" rx="10" fill="#F1E1D6" stroke="#8B5A44"/>
+      <text x="553" y="48" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">Pick platforms</text>
+      <text x="553" y="62" font-size="10.5" font-weight="600" fill="#32392E" text-anchor="middle">that need you too</text>
+      <circle cx="553" cy="95" r="14" fill="#A9814F"/>
+      <text x="553" y="100" font-size="13" fill="#FCFAF5" text-anchor="middle">?</text>
+      <text x="553" y="120" font-size="9" fill="#8B5A44" text-anchor="middle">worth evaluating</text>
+    </svg>
+    <p class="diagram-caption">The four defensive moves, and an honest read on where the program stands on each one.</p>
+  </div>
+
+  <section class="post-section">
+    <h3>What we cut, and why</h3>
+    <p>The formal two-sided market economics (Armstrong) and the deeper network-effects lock-in literature (Arthur, Farrell &amp; Saloner, Liebowitz &amp; Margolis) are cut because they're built for markets fighting over which platform tips to winner-take-all, not a single program's relationship to platforms that already exist. The deeper ecosystem-architecture literature (Adner, Jacobides, Cennamo &amp; Santalo, Gawer &amp; Cusumano) is cut for the same reason as prior weeks, it's built for firms designing an ecosystem, not a program operating inside one someone else built.</p>
+  </section>
+
+  <section class="section-heading">
+    <span class="eyebrow">The case study</span>
+    <h2>Who could decide to become you</h2>
+    <p class="sub">Google, a directory site, and a data vendor, each one borrowed distribution the program doesn't control.</p>
+  </section>
+
+  <section class="post-section">
+    <p><strong>What's actually playing platform in this story.</strong> Three things the program depends on but doesn't control: Google, where ad rules and search-result design can change without notice; any nursing-program directory site the program is listed on; and the contact-list vendor, whose data isn't exclusive, since any competing nursing program can buy the same list.</p>
+
+    <p><strong>The envelopment risk, made concrete.</strong> If a directory site ever decided to answer "which RN-BS program is right for me" directly on its own page instead of sending traffic through, that's the program losing the one thing it actually has, the direct relationship, without ever getting a vote in the decision.</p>
+
+    <p><strong>Is this a market failure, or just the cost of the distribution?</strong> It's the cost. Nobody is forcing the program onto Google, a directory site, or a data vendor, and each one hands the program reach it couldn't build alone. The real question isn't whether these platforms have the right to change their own rules. It's whether the program is capturing enough value from being on them to justify staying if they do.</p>
+
+    <p><strong>What the actual defense looks like.</strong> Of the four defensive moves, the program already has the strongest version of the first one: the trust built with CC advisors and students at in-person events doesn't live on Google, a directory site, or a vendor's list, and can't be absorbed the way a listing or a ranking can. Multi-homing is the second move already partly in place, running trips, Google Ads, and a list test as separate, comparable channels rather than betting everything on one.</p>
+  </section>
+
+  <section class="post-section">
+    <h3>Sources referenced this week</h3>
+    <ul class="sources-list">
+      <li><span class="cite-author">Van Alstyne, Parker &amp; Choudary</span> — "Pipelines, Platforms, and the New Rules of Strategy" (2016)</li>
+      <li><span class="cite-author">Rochet &amp; Tirole</span> — "Platform Competition in Two-Sided Markets" (2003)</li>
+      <li><span class="cite-author">Iansiti &amp; Levien</span> — "Strategy as Ecology" (2004)</li>
+      <li><span class="cite-author">Eisenmann, Parker &amp; Van Alstyne</span> — "Platform Envelopment" (2011)</li>
+      <li><span class="cite-author">Boudreau</span> — "Open Platform Strategies and Innovation" (2010)</li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <p><a href="../index.html">← Back to all weeks</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
